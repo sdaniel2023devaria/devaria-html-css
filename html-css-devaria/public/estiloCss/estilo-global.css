@@ -32,8 +32,8 @@ h1.title{
     margin-right: 20px;
 }
 
-@media screen and(min-width:992px) {
-    .width-50pct-disktop{
+@media screen and (min-width:992px) {
+    .width-50pct-desktop{
         width: 50%  !important;
     }
 }
