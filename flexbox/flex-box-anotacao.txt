@@ -1,0 +1,8 @@
+html {
+  /*direction:rtl;significa "right-to-left"*/
+  
+}
+.container{
+  display:flex;
+  flex-direction:column-reverse;
+}
