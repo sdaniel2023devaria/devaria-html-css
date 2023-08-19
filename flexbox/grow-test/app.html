@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        .container {
+            display: flex;
+            border: 5px solid #ccc;
+
+
+        }
+
+        .container div {
+            background-color: #483D8B;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #fff;
+            padding: 20px 0;
+            width: 100px;
+            flex-grow: 1;
+        }
+
+        .container div:nth-child(2) {
+            flex-grow: 3;
+        }
+
+        .container div:nth-child(3) {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body style="background-color:#333;">
+    <div class="container">
+        <div class="items">1°</div>
+        <div class="items">2°</div>
+        <div class="items">3°</div>
+        <div class="items">4°</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-grow</title>
+    <style>
+        body{
+            font-family: monospace;
+            color: #333;
+        }
+        .items{
+            margin: 5px;
+            background-color:tomato;
+            text-align:center;
+            border: 1px solid #000;
+            font-size: 1.5em;
+        }
+        .container{
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px #ccc solid;
+        }
+        p{
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: 1.25em;
+            font-weight: normal;
+        }
+
+        /*Flex grow /  flex shrink*/
+        .container{
+            display: flex;
+            width: 500px;
+            padding: 5px;
+        }
+        .container div{
+            margin: 0;
+            padding: 0;
+            width: 150px;
+            flex-shrink: 1;
+        }
+        .container div:nth-child(1){
+            flex-shrink: 3;
+        }
+        .container div:nth-child(2){
+            flex-shrink: 2;
+        }
+        .container div:nth-child(2){
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items"><p>A</p></div>
+        <div class="items"><p>B</p></div>
+        <div class="items"><p>C</p></div>
+        <div class="items"><p>D</p></div>
+    </div>
+</body>
+</html>
